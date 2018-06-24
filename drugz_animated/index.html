@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>drugz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="js/handlebars-v4.0.11.js"></script>
+    <script src="js/blotter.min.js"></script>
+    <script src="js/materials/liquidDistortMaterial.js"></script>    
+</head>
+
+<body>
+
+    <div class="content" id="content">
+        <header>
+            <div class="headernull"></div>
+            <div class="headerstuff">
+                <div id="logo">
+                    <span>drugz</span>
+                </div>
+                <div id="nav">
+                    <a>home</a>
+                    <a class="menu_item">about</a>
+                    <a class="menu_item">trip</a>
+                </div>
+            </div>
+        </header>
+
+
+        <script id="rightTemplate" type="text/x-handlebars-template">
+            <section class="rightTemplate">
+                <div class="rightTemplate_details">
+                        <span class="pronunciation">noun - {{pronunciation}}</span>
+                        <span class="price">{{category}} - {{price}}</span>
+                    </div>
+                    <div class="rightTemplate_drugName" id="{{id}}">
+                        <span></span>
+                    </div>
+                    <div class="rightTemplate_description">
+                        <span>{{description1}}</span>
+                        <span class="right_description">{{description2}}</span>
+                    </div>
+                    <div class="rightTemplate_image">
+                        <img class="drugPicture" src="" alt="">
+                </div>
+            </section>
+        </script>
+
+        <script id="leftTemplate" type="text/x-handlebars-template">
+            <section class="leftTemplate">
+                    <div id="theMargin">
+                    <div class="leftTemplate_details">
+                            <span class="pronunciation">noun - {{pronunciation}}</span>
+                            <span class="price">{{category}} - {{price}}</span>
+                        </div>
+                        <div class="leftTemplate_drugName" id="{{id}}">
+                            <span></span>
+
+                        </div>
+                        <div class="leftTemplate_description">
+                            <span>{{description1}}</span>
+                            <span class="right_description">{{description2}}</span>
+                    </div>
+                </div>
+                    <div class="leftTemplate_image">
+                        <img class="drugPicture" src="" alt="">
+                    </div>
+                
+            </section>
+        </script>
+
+
+
+
+
+
+        <script src="js/data.js"></script>
+
+    </div>
+
+
+</body>
+
+</html>

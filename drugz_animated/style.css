@@ -1,0 +1,254 @@
+@font-face {
+  font-family: 'Circular Std Book';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Circular Std Book'), url('font/CircularStd-Book.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Circular Std Book Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Circular Std Book Italic'), url('font/CircularStd-BookItalic.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Circular Std Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Circular Std Medium'), url('font/CircularStd-Medium.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Circular Std Medium Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Circular Std Medium Italic'), url('font/CircularStd-MediumItalic.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Circular Std Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Circular Std Bold'), url('font/CircularStd-Bold.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Circular Std Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Circular Std Bold Italic'), url('font/CircularStd-BoldItalic.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Circular Std Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Circular Std Black'), url('font/CircularStd-Black.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'Circular Std Black Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Circular Std Black Italic'), url('font/CircularStd-BlackItalic.woff') format('woff');
+  }
+  
+  body {
+    color: white;
+    font-family: "Circular Std Book";
+    background-image: url("pics/texture.jpg");
+    background-size: 100%;
+  }
+
+  canvas {
+    overflow: visible;
+  }
+  
+  
+  .content {
+    max-width: 1200px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  header {
+    display: flex;
+    font-family: "Circular Std Medium";
+  }
+  
+  .headernull {
+    flex-grow: 1;
+  }
+  
+  .headerstuff {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;            
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  
+  #logo {
+    font-size: 24px;
+    margin-left: 160px;
+  }
+  
+  #nav {
+    flex-direction: row;
+  }
+  
+  .menu_item {
+    padding-left: 38px;
+  }
+  
+  .rightTemplate {
+    position: relative;
+  }
+  
+  .rightTemplate_details {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 17.6px;
+    margin-top: 110px;
+    display: flex;
+    margin-left: 17px;
+  }
+  
+  .price {
+    padding-left: 215px;
+  }
+
+  .b-canvas{
+    overflow: visible;
+  }
+    
+  .rightTemplate_drugName span {
+    font-size: 250px;
+    font-weight: bold;
+  }
+  
+  .rightTemplate_description {
+   margin-top: -81px;
+   display: flex;
+   margin-left: 17px;
+  }
+  
+  .rightTemplate_description span {
+    font-size: 16px;
+    width: 284px;
+    letter-spacing: 1px;
+  }
+  
+  .right_description {
+    padding-left: 53px;
+  }
+  
+  .rightTemplate_image {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    top: 53px;
+    z-index: -1;
+  }
+  
+  .leftTemplate {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 110px;
+  }
+  
+  .leftTemplate_details {
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 100;
+    line-height: 17.6px;
+    margin-top: 50px;
+    display: flex;
+    margin-left: 17px;
+  }
+  
+    
+  .leftTemplate_drugName span {
+    font-size: 250px;
+    font-weight: bold;
+    display: flex;
+  }
+  
+  .leftTemplate_description {
+   margin-top: -41px;
+   display: flex;
+   margin-left: 17px;
+  
+  }
+  
+  .leftTemplate_description span {
+    font-size: 16px;
+    width: 284px;
+    letter-spacing: 1px;
+  }
+  
+  .right_description {
+    padding-left: 53px;
+  }
+  
+  .leftTemplate_image {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    top: 53px;
+    z-index: -1;
+  }
+  
+  @media (max-width: 1170px) {
+    .rightTemplate_image img {
+      filter: grayscale(100%);
+      opacity: 0.5;
+    }
+    .leftTemplate_image img {
+      filter: grayscale(100%);
+      opacity: 0.5;
+    }
+    .headernull {
+      display: none;
+    }
+    
+    .headerstuff {
+      display: inline-block;
+    }
+    
+    #logo {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+    }
+    
+    #nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 30px;  
+      letter-spacing: 1px;
+    }
+    
+    .menu_item {
+      padding-left: 38px;
+    }
+    
+  }
